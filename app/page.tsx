@@ -267,26 +267,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="calculator-card card-ai group border-2 border-purple-200 hover:border-purple-300 flex flex-col">
-              <div className="calculator-card-content flex flex-col flex-grow">
-                <CardHeader className="text-center p-4 pb-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-violet-600 rounded-xl flex items-center justify-center mx-auto mb-3 calculator-icon shadow-lg">
-                    <Camera className="h-6 w-6 text-white" />
-                  </div>
-                  <CardTitle className="text-lg text-gray-900 mb-2">AI Photo Equation Solver</CardTitle>
-                  <CardDescription className="text-sm text-gray-600 leading-relaxed flex-grow">
-                    Snap a photo of any math equation and get instant solutions
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="p-4 pt-0 mt-auto">
-                  <Link href="/ai-solver">
-                    <Button className="w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 text-white font-semibold py-2 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                      Try AI Solver
-                    </Button>
-                  </Link>
-                </CardContent>
-              </div>
-            </Card>
+           
 
             <Card className="calculator-card card-generators group border-2 border-pink-200 hover:border-pink-300 flex flex-col">
               <div className="calculator-card-content flex flex-col flex-grow">
@@ -329,6 +310,30 @@ export default function HomePage() {
                 </CardContent>
               </div>
             </Card>
+
+             <Card className="calculator-card card-ai group border-2 border-purple-200 hover:border-purple-300 flex flex-col">
+              <div className="calculator-card-content flex flex-col flex-grow">
+                <CardHeader className="text-center p-4 pb-3">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-violet-600 rounded-xl flex items-center justify-center mx-auto mb-3 calculator-icon shadow-lg">
+                    <Camera className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle className="text-lg text-gray-900 mb-2">AI Photo Equation Solver</CardTitle>
+                  <CardDescription className="text-sm text-gray-600 leading-relaxed flex-grow">
+                    Snap a photo of any math equation and get instant solutions
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-4 pt-0 mt-auto">
+                  <Link href="/ai-solver">
+                    <Button className="w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 text-white font-semibold py-2 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                      Try AI Solver
+                    </Button>
+                  </Link>
+                </CardContent>
+              </div>
+            </Card>
+
+
+
           </div>
         </div>
       </section>
