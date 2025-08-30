@@ -18,6 +18,7 @@ export default function Header() {
     { name: "Other", href: "/other", color: "hover:text-indigo-600 hover:bg-indigo-50" },
   ]
 
+  
   const handleNavigation = (href: string) => {
     router.push(href)
     window.scrollTo({ top: 0, behavior: 'smooth' })
